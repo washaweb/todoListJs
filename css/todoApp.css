@@ -1,0 +1,167 @@
+/* global */
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font: 400 16px/22px 'Spartan', sans-serif;
+    /* 
+        PATTERN image found on
+        https://www.toptal.com/designers/subtlepatterns/ 
+    */
+    background: url('../imgs/shattered.png') repeat top left;
+}
+
+body.bg1 {
+    background: url('../imgs/ricepaper_v3.png') repeat top left;
+}
+body.bg2 {
+    background: url('../imgs/bedge_grunge.png') repeat top left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 60px;
+    font-weight: 300;
+}
+
+/* list */
+
+#todoList {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,.4);
+    background-color: #fff;
+    list-style-type: none;
+}
+
+#todoList li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    transition: 1s;
+}
+
+#todoList li:hover,
+#todoList li:focus,
+#todoList li:active {
+    background-color: #f2f6f6;
+}
+
+#todoList li:last-of-type {
+    border-bottom: none;
+}
+
+#todoList li div {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    line-height: 20px;
+    color: #c8401e;
+    cursor: pointer;
+    transition: .3s;
+}
+#todoList li div:hover,
+#todoList li div:active,
+#todoList li div:focus {
+    color:#f54316;
+}
+
+
+#todoList .done {
+    text-decoration: line-through;
+}
+
+
+/* form */
+#formNewTodo {
+    max-width: 450px;
+    margin: 60px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 14px 32px 30px;
+    border-radius: 8px;
+}
+
+#formNewTodo label {
+    display: block;
+    padding: 8px 0px;
+}
+
+#formNewTodo input,
+#formNewTodo textarea {
+    width: 100%;
+    border: 1px solid #dadfdf;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#formNewTodo input[type="checkbox"] {
+    width: auto;
+    padding: auto;
+}
+
+#formNewTodo button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color:#f54316;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+#formNewTodo button:hover,
+#formNewTodo button:focus,
+#formNewTodo button:active {
+    background-color:#ff5e35;
+    transform: scale(1.05);
+}
+
+/*
+    Sélecteur d'arrière plan
+*/
+#changeBackground ul {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#changeBackground li {
+    border: 3px solid #fff;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+#changeBackground li:hover,
+#changeBackground li:focus,
+#changeBackground li:active {
+    border: 3px solid #ffffff80;
+}
+
+#changeBackground li img {
+    display: block;
+    object-fit: cover;
+}

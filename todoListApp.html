@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Spartan:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/todoApp.css">
+</head>
+<body>
+    <h1>Ma todo App</h1>
+    <ul id="todoList">
+
+    </ul>
+
+    <form action="#" id="formNewTodo">
+        <label for="todoName">Intitulé :</label>
+        <input type="text" name="todoName" id="todoName" required><br>
+        <label for="todoDescription">Description :</label>
+        <textarea name="todoDescription" id="todoDescription" cols="20" rows="3"></textarea><br>
+        <label>
+            <input type="checkbox" name="todoDone" id="todoDone"> Tache achevée ?
+        </label>
+
+        <button id="btnSubmit" type="submit">Créer une nouvelle todo</button>
+    </form>
+
+    <div id="changeBackground">
+        <ul>
+            <li data-class="">
+                <img width="50" height="50" src="imgs/shattered.png" alt="bg 0">
+            </li>
+            <li data-class="bg1">
+                <img width="50" height="50" src="imgs/ricepaper_v3.png" alt="bg 1">
+            </li>
+            <li data-class="bg2">
+                <img width="50" height="50" src="imgs/bedge_grunge.png" alt="bg 2">
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="js/todoApp.js"></script>
+</body>
+</html>
